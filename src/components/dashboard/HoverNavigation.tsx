@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
-import { User, Map, Globe, Settings } from "lucide-react";
+import { User, Map, Globe, Settings, LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
-  icon: React.ElementRef<typeof User>;
+  icon: LucideIcon;  // Changed from SVGSVGElement to LucideIcon
   title: string;
   description: string;
   path: string;
