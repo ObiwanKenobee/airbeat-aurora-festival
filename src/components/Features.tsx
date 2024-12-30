@@ -1,9 +1,9 @@
-import { Hologram, Globe, Ticket, VrHeadset, Leaf } from "lucide-react";
+import { Sparkles, Globe, Ticket, Headset, Leaf } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
   {
-    icon: Hologram,
+    icon: Sparkles,
     title: "Immersive Holo-Stage",
     description: "Walk through history and mythology with holographic 360° storytelling",
   },
@@ -18,7 +18,7 @@ const features = [
     description: "A festival experience uniquely tailored to you",
   },
   {
-    icon: VrHeadset,
+    icon: Headset,
     title: "Virtual Pilgrimages",
     description: "Relive historical milestones in stunning virtual reality",
   },
