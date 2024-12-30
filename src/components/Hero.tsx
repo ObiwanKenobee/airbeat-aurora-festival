@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -11,19 +12,29 @@ export const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-aurora-purple via-aurora-blue to-aurora-green">
           AIRBEAT™ AURORA
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-200">
-          Where technology meets culture, and imagination knows no bounds
+        <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
+          Welcome to the future of immersive entertainment—a transformative journey where technology, culture, and sustainability converge. This is more than a festival; it's a global movement that unites humanity through multisensory experiences.
         </p>
-        <Button 
-          size="lg"
-          className="bg-gradient-to-r from-aurora-purple to-aurora-blue hover:opacity-90 transition-opacity"
-        >
-          Reserve Your Spot
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button 
+            size="lg"
+            className="bg-gradient-to-r from-aurora-purple to-aurora-blue hover:opacity-90 transition-opacity"
+          >
+            Reserve Your Spot
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+          <Button 
+            size="lg"
+            variant="outline"
+            className="border-aurora-blue text-aurora-blue hover:bg-aurora-blue/10"
+          >
+            Explore the Experience
+          </Button>
+        </div>
       </div>
     </div>
   );
